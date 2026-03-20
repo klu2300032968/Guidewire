@@ -1,63 +1,144 @@
--> AI-Powered Insurance for India’s Gig Economy
+🛡️ SurakshaPay — AI-Powered Income Protection for Gig Workers
+📌 Problem Statement
 
--> Inspiration
-India’s gig economy—powered by platforms like Zomato, Swiggy, Amazon, and Dunzo—supports millions of delivery partners. Despite being essential to urban life, these workers face unpredictable income loss due to external disruptions such as heavy rainfall, heatwaves, pollution spikes, or natural disasters.
-We were inspired to build a safety net for these workers—an AI-driven parametric insurance platform that ensures they are financially protected when they need it the most.
+India’s gig economy delivery partners (Zomato, Swiggy, Amazon, Zepto, Dunzo, etc.) face unpredictable income loss due to external disruptions such as extreme weather, air pollution, floods, and heatwaves. These workers depend on daily earnings and currently have no insurance mechanism to protect against such uncontrollable events.
+SurakshaPay is an AI-enabled parametric micro-insurance platform that automatically compensates gig workers when environmental disruptions reduce their ability to work.
 
-->What It Does
+👤 Persona-Based Scenario
+Persona: Ravi — Delivery Partner (Age 27)
+Works for multiple platforms (Swiggy + Zomato)
+Earns ₹700–₹900 per day
+Supports family of four
+Uses Android smartphone
+No formal insurance coverage
+Scenario 1: Heavy Rainfall
+City experiences extreme rainfall (> 60 mm/day)
+Orders decline sharply
+Roads become unsafe
+Ravi’s earnings drop by ~40%
+➡️ SurakshaPay automatically detects rainfall threshold breach
+➡️ Confirms Ravi was active in affected zone
+➡️ ₹800 payout credited instantly to his UPI
+Scenario 2: Heatwave
+Temperature exceeds 45°C
+Government issues heat advisory
+Outdoor work becomes hazardous
+➡️ System triggers heat-risk payout
+➡️ Worker receives compensation without filing claims
+🔄 Application Workflow
+User registers using phone number + OTP
+Selects weekly insurance plan
+System tracks environmental risks in user location
+AI evaluates disruption severity
+If parametric conditions are met → payout triggered
+Amount transferred instantly via UPI
+💰 Weekly Premium Model
+Designed for gig workers’ earning cycle.
+Plan	Weekly Premium	Coverage Amount
+Basic	₹20	Up to ₹500
+Standard	₹35	Up to ₹1500
+Premium	₹50	Up to ₹3000
+Features:
+Auto-renew option
+Pause anytime
+Affordable micro-pricing
+No long-term commitment
+⚙️ Parametric Triggers
+Payouts are activated automatically based on predefined measurable conditions.
+Risk Type	Trigger Condition
+Heavy Rain	Rainfall > 50 mm/day
+Heatwave	Temperature > 45°C
+Air Pollution	AQI > 400
+Flood Alert	Official disaster notification
+Cyclone Warning	Government alert issued
 
-Our platform provides automated income protection insurance for gig workers by:
-Monitoring real-time environmental data (weather, AQI, disasters)
-Detecting disruptions that impact working hours
-Automatically triggering insurance payouts when predefined conditions are met
-Offering a simple weekly subscription model aligned with gig workers’ earnings cycle
-Using AI for fraud detection and risk assessment
+No claim filing required.
 
--> How We Built It
+🤖 AI/ML Integration
+1. Risk Prediction Engine
+Uses historical weather + earnings data
+Predicts probability of income disruption
+Enables dynamic pricing
+2. Premium Calculation Model
+Factors considered:
+City risk profile
+Seasonal trends
+Worker activity patterns
+Historical disruptions
+Coverage level
+3. Fraud Detection System
+AI prevents misuse using:
+GPS verification of worker location
+Activity validation (delivery app usage patterns)
+Anomaly detection
+Cross-checking environmental data
+Multiple payout prevention
+4. Smart Payout Engine
+Automatically calculates compensation based on:
+Severity of disruption
+Duration
+Worker activity history
+Plan coverage
+🖥️ Platform Choice: Mobile Application
+Justification:
+Gig workers are mobile-first users
+Easy real-time notifications
+GPS-based verification
+Instant UPI payouts
+Works on low-cost Android devices
+🧱 Proposed Tech Stack
+Frontend
+Mobile App: Flutter / React Native
+Simple multilingual UI
+Backend
+Node.js / Spring Boot
+REST APIs
+AI/ML
+Python (TensorFlow / Scikit-learn)
+Risk prediction models
+Fraud detection algorithms
+Data Sources
+Weather APIs (IMD, OpenWeather)
+AQI data sources
+Government disaster alerts
+Database
+PostgreSQL / MongoDB
+Payments
+UPI integration (Razorpay / PhonePe API)
+Cloud
+AWS / Azure / GCP
+📅 Development Plan
+Phase 1 — Ideation & Design
+Problem analysis
+Persona creation
+Workflow design
+Prototype UI
 
-Frontend: React / Next.js (for intuitive UI)
-Backend: Node.js / Spring Boot (API services)
-Database: MongoDB
-AI Models:
-Predictive models for disruption detection
-Fraud detection using anomaly detection
-APIs Used:
-Weather API (real-time weather data)
-AQI API (pollution monitoring)
-Cloud: AWS (for deployment & scalability)
-Workflow:
-Collect real-time environmental data
-Analyze conditions using AI models
-Check predefined insurance triggers
-Automatically initiate payout if conditions match
-Log and validate transactions using fraud detection system
+Phase 2 — Core Development
+Backend APIs
+Risk engine integration
+Payment integration
+Phase 3 — AI & Testing
+ML model deployment
+Fraud detection module
+End-to-end testing
+🌍 Impact & Benefits
+For Gig Workers
+✅ Income stability
+✅ Protection from climate risks
+✅ Financial security
+✅ No paperwork
+For Platforms & Society
+✅ More reliable workforce
+✅ Reduced economic vulnerability
+✅ Supports informal sector
+✅ Scalable nationwide
 
--> Challenges We Ran Into
-
-Integrating multiple real-time data sources reliably
-Designing fair and accurate parametric triggers
-Preventing fraudulent claims without delaying payouts
-Keeping the pricing affordable for gig workers
-Ensuring scalability for large user bases
-->Accomplishments That We’re Proud Of
-Built a fully automated claim system (zero manual intervention)
-Designed a low-cost weekly insurance model
-Implemented AI-based fraud detection
-Created a scalable and real-time data processing system
-
-->What We Learned
-
-Understanding parametric insurance models
-Working with real-time APIs and streaming data
-Applying AI for risk prediction and fraud detection
-Building user-centric solutions for underserved communities
-
--> What’s Next
-
-Partnering with gig platforms (Zomato, Swiggy, etc.)
-Expanding to cover more risks (accidents, health issues)
-Adding multilingual support for wider accessibility
-Improving AI models with more real-world data
-Integrating blockchain for transparent claim processing
-->Built With
-React, Next.js, Node.js, Spring Boot, MongoDB, AWS, TensorFlow, REST APIs
+🚀 Future Enhancements
+Integration with delivery platforms
+Health & accident add-ons
+Government subsidy programs
+Blockchain-based transparency
+Community risk pooling
+🔗prototype demonstration
+https://youtu.be/U-kGXqoedJI?si=REn-meeu5v5w-Xut
